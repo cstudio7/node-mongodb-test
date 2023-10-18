@@ -14,8 +14,9 @@ A simple restful NodeJS CRUD, with expressJS and mongoDB.
 
 | ROUTE                     | HTTP   | DESCRIPTION          | 
 |---------------------------|--------|----------------------| 
-| /api/                     | GET    | Main page            | 
+| /                         | GET    | Main page(Welcome)   | 
 | /api/products             | GET    | Show all products    | 
+| /api/products             | POST   | CREATE a  products   |
 | /api/products/:product_id | GET    | Show by id           | 
 | /api/product?name=[name]  | GET    | Search by name       | 
 | /api/products/:product_id | PUT    | Update product by id |    
