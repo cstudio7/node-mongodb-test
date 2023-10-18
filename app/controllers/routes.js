@@ -62,7 +62,7 @@ router.route('/products/:id')
     .get(async (req, res) =>  {
         try{
             const Product = await ProductModel.findOne({_id: req.params.id});
-            if(Product) return res.status(200).send("Products")
+            if(Product) return res.status(200).send(Product)
             else return res.status(404).send('Product not found')
         }catch (e) {
             res.status(500).send('Ops Something Went Wrong. Try again.')
